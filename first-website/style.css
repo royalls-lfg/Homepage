@@ -1,0 +1,30 @@
+html{
+    background-color: lightyellow;
+    font-size: 25px;
+}
+p {
+    background-color: aquamarine;  
+    font-size: 30px;
+    border: 10px dotted rgb(151, 85, 222);
+    /* boarder is a shorthand property for boarder-width boarder-style and boarder-color */
+    text-align: center;
+    padding: 10px 50px;
+    /* 
+        -one padding value= applied to all sides
+            -1st value= top and bottom
+            -2nd value= left and right
+            -3rd value= bottom explicitly
+            -4th value= left explicitly*/
+    margin: 10px 100px;
+}
+h1 {
+    color:rgb(232, 160, 215);
+}
+.special {
+    background-color: indigo;
+    border-radius: 100px;
+    color: lightyellow;
+}
+.center-text{
+    text-align: center;
+}
