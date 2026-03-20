@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    background: lightblue;
+}
+
+
+.buttons{
+    background: lightpink;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.container{
+    background-color: rgba(255, 238, 180, 0.819);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container.dark{
+background-color: rgba(206, 192, 145, 0.819);
+
+}
+
+.box{
+    background-color: goldenrod;
+    height: 100px;
+    width: 100px;
+    animation: spin 4s infinite linear;
+    animation-play-state:paused;
+}
+
+.box.dark{
+background-color: rgb(162, 122, 21);
+
+}
+
+.box.spin {
+    animation-play-state:running;
+}
+
+@keyframes spin{
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.chair{
+    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    opacity: 0;
+}
+
+.chair.show{
+
+    opacity: 1;
+}
+
+.draggable{
+    cursor: grab;
+}

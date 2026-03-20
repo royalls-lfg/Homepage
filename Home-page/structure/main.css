@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.fixed{
+     background-color: rgb(222, 225, 48);
+    height: 300px;
+    width: 100%;
+    position: fixed;
+    top: 30px;
+    z-index: 9;
+
+}
+
+.main-container {
+    background-color: bisque;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top:0px;
+    margin-bottom: 50px;
+}
+
+.top {
+
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+
+}
+
+
+.top-item {
+    background-color: rgb(233, 166, 10);
+    height: 30px;
+    width: 90px;
+
+  
+}
+
+
+
+.bottom-item {
+    background-color: rgb(233, 166, 10);
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+
+.main-container-two {
+    background-color: bisque;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 300px;
+}
+
+.top {
+
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+
+}
+
+
+.top-item {
+    background-color: rgb(10, 25, 233);
+    height: 30px;
+    width: 90px;
+
+  
+}
+
+
+
+.bottom-item {
+    background-color: rgb(10, 25, 233);
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+
+.medium-container{
+    background-color: bisque;
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  
+    
+    
+    
+}
+
+.top-medium {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: flex-end;
+    
+}
+
+
+.bottom-medium {
+    background-color: bisque;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.medium-top-item {
+    background-color: rgb(10, 25, 233);
+    height: 20px;
+    width: 60px;
+}
+
+.medium-bottom-item {
+    background-color: rgb(10, 25, 233);
+    height: 200px;
+    width: 49.90%;
+    gap:10px;
+    
+}
+
+
+
+
+
+.small-container{
+    background-color: bisque;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+    
+}
+
+.top-small {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: flex-end;
+    position: sticky;
+    bottom: 0;
+}
+
+
+.bottom-small {
+    background-color: bisque;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.small-top-item {
+    background-color: rgb(10, 25, 233);
+    height: 20px;
+    width: 60px;
+}
+
+.small-bottom-item {
+    background-color: rgb(10, 25, 233);
+    height: 100px;
+    width: 33%;
+    gap:10px;
+    
+}
+
+
+
+.tiny-container{
+    /* background-color: bisque; */
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    
+    
+    
+}
+
+.top-tiny {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    gap: 35px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: flex-end;
+    
+}
+
+
+.bottom-tiny {
+    /* background-color: bisque; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.tiny-top-item {
+    background-color: rgb(10, 25, 233);
+    height: 15px;
+    width: 35px;
+}
+
+.tiny-bottom-item {
+    background-color: rgb(10, 25, 233);
+    height: 80px;
+    width: 12%;
+    gap:10px;
+    
+}

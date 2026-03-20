@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.block {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inline {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 35px;
+    display: inline-block;
+    
+}
+
+.container {
+    background-color: darkorchid;
+    height: 600px;
+    display: flex;
+    /*
+    flex direction will determine the main axis:
+            Row= horizontal main axis
+            column= vertical main axis
+    */
+    flex-direction: row;
+    flex-wrap:wrap; 
+
+    /* justify content aligns along the main axis*/
+    justify-content: flex-end;
+
+    /* align items= alligns items along the cross axis and is used for non wrapping flex boxes*/
+    align-items: center;
+
+    align-content: center; /*this allows text wrap the way you want it to (cross axis)*/
+
+    gap: 10px;
+}
+
+.item {
+    background-color: cornflowerblue;
+    padding: 10px;
+    border: 1px solid;
+    width: 200px;
+    margin: 0px;
+    order: 1
+}
+
+.special {
+    background-color: cornsilk;
+    order: 0;
+}

@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+.square{
+
+    background-color: darkblue;
+    width: 200px; 
+    height: 200px;
+    /* animation-name:test;
+    animation-duration: 4s ;
+    animation-delay: 2s;
+    animation-iteration-count: 1;  
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+/*infinite */
+
+    /* animation: test 2s 4s infinite ease-in-out alternate both ; */
+}
+
+@keyframes test {
+
+    0%{
+        background-color: red;
+
+    }
+
+    50%{
+        background-color: blue;
+
+    }
+
+    100%{
+
+        background-color: yellow;
+    }
+}
+
+.container {
+    background-color: pink;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.circle{
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: pulse 4s infinite alternate ease-in-out;
+
+}
+
+@keyframes pulse{
+    0%{
+        background-color: lightblue;
+        height: 0px;
+        width: 0px;
+        /* scale: 1 */
+    }
+
+    100%{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+        /* scale: 1.4 */
+       /*  this makes objects around it not move*/
+
+    }
+}
+
+.box{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+
+    }
+}
+
+.mover {
+
+    background-color: aquamarine;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: move 4s infinite;
+
+}
+
+@keyframes move {
+
+    0%{
+
+        left:-150px;
+    }
+
+    100%{
+        left:100%;
+    }
+}
+
+.changer {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s, border-radius 10s;
+
+
+}
+
+.changer:hover {
+
+    background-color: lightyellow;
+    border-radius: 100%;
+
+    /* animation: change 2s forwards; */
+}
+
+/* @keyframes change{
+    0%{
+        background-color: aliceblue;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    100%{
+        background-color: lightyellow;
+        border-radius: 100%;
+    }
+} */
