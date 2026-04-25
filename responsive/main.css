@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(246, 251, 225);
+    transition: background-color .5s;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px ;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+header, .left, .center, .right , footer{
+    border: 1px solid;
+    padding:20px;
+}
+
+header, footer{
+
+    text-align: center;
+   
+}
+
+main{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.left, .right{
+    width: 25%;
+
+}
+
+.center{
+    width: 50%;
+}
+
+/* min width= mobile first (for mobile first we want our media quaries to increase in pixel size as we move down our css doccument */
+/* max width=desktop first (want our media quaries to decrease in pixel size as we go down our doccument)*/
+
+
+/* tablet */
+@media screen and (max-width:1000px){
+
+    body{
+        background-color: silver;
+        font-size: 120%;
+    }
+
+    main{
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width:100%
+
+    }
+    
+    .center, .right{
+        width: calc(50% - 5px);
+
+
+    }
+
+   
+}
+
+
+/* phone */
+@media screen and (max-width: 700px){ 
+
+body {
+        background-color: light rgb(225, 164, 95);
+        font-size: 130%;
+    }
+
+    .center, .right {
+        width:100%
+    }
+
+
+}
+    
+
+
+
