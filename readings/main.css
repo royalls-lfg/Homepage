@@ -3,6 +3,12 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(108, 53, 198);
+}
+
+h1{
+
+    color: white;
+    margin: 30px;
 }
 
